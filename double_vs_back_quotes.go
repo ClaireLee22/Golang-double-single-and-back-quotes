@@ -18,4 +18,11 @@ func main() {
 
 	// error: more than one character in rune literal
 	// singleQuotes := 'Hello\n Go!'
+	
+	// double vs back quotes
+	escapeCharactersIndoubleQuotes := "\n"
+	escapeCharactersInbackQuotes := `\n`
+
+	fmt.Printf("escape characters in double quotes: %s, length: %d\n", escapeCharactersIndoubleQuotes, len(escapeCharactersIndoubleQuotes))
+	fmt.Printf("escape characters in back quotes: %s, length: %d\n", escapeCharactersInbackQuotes, len(escapeCharactersInbackQuotes))
 }
